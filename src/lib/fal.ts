@@ -48,7 +48,14 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
     cost: "",
     category: "video",
   },
-
+  {
+    endpointId: "cassetteai/music-generator",
+    label: "Cassette AI",
+    description:
+      "CassetteAI’s model generates a 30-second sample in under 2 seconds and a full 3-minute track in under 10 seconds. At 44.1 kHz stereo audio, expect a level of professional consistency with no breaks, no squeaks, and no random interruptions in your creations.",
+    cost: "",
+    category: "music",
+  },
   {
     endpointId: "fal-ai/minimax-music",
     label: "Minimax Music",
@@ -62,14 +69,6 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
         key: "reference_audio_url",
       },
     ],
-  },
-  {
-    endpointId: "cassetteai/music-generator",
-    label: "Cassette AI",
-    description:
-      "CassetteAI’s model generates a 30-second sample in under 2 seconds and a full 3-minute track in under 10 seconds. At 44.1 kHz stereo audio, expect a level of professional consistency with no breaks, no squeaks, and no random interruptions in your creations.",
-    cost: "",
-    category: "music",
   },
   {
     endpointId: "fal-ai/minimax/speech-02-hd",
