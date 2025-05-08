@@ -25,7 +25,7 @@ any extra content and/or explanation. **DO NOT ADD markdown** or quotes, return 
 
 export async function enhancePrompt(
   prompt: string,
-  options: EnhancePromptOptions = { type: "video" },
+  options: EnhancePromptOptions = { type: "video" }
 ) {
   const { type, project } = options;
   const projectInfo = !project
@@ -38,7 +38,7 @@ export async function enhancePrompt(
   `.trim();
   const promptInfo = !prompt.trim() ? "" : `User prompt: ${prompt}`;
 
-  const { data } = await fal.subscribe("google/gemini-2.0-flash-001", {
+  const { data } = await fal.subscribe("fal-ai/any-llm", {
     input: {
       system_prompt: SYSTEM_PROMPT,
       prompt: `
@@ -46,7 +46,7 @@ export async function enhancePrompt(
         ${projectInfo}
         ${promptInfo}
       `.trim(),
-      model: "meta-llama/llama-3.2-1b-instruct",
+      model: "google/gemini-2.0-flash-001",
     },
   });
   return data.output.replace(/^"|"$/g, "");
