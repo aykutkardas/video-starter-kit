@@ -49,6 +49,16 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
     category: "video",
   },
   {
+    endpointId: "fal-ai/veo2/image-to-video",
+    label: "Veo 2 (Image to Video)",
+    description:
+      "Veo 2 creates videos from images with realistic motion and very high quality output.",
+    cost: "",
+    category: "video",
+    inputAsset: ["image"],
+  },
+
+  {
     endpointId: "cassetteai/music-generator",
     label: "Cassette AI",
     description:

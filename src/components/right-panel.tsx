@@ -259,10 +259,7 @@ export default function RightPanel({
       : {};
   const createJob = useJobCreator({
     projectId,
-    endpointId:
-      generateData.image && mediaType === "video"
-        ? `${endpointId}/image-to-video`
-        : endpointId,
+    endpointId,
     mediaType,
     input: {
       ...(endpoint?.initialInput || {}),
