@@ -25,7 +25,7 @@ any extra content and/or explanation. **DO NOT ADD markdown** or quotes, return 
 
 export async function enhancePrompt(
   prompt: string,
-  options: EnhancePromptOptions = { type: "video" },
+  options: EnhancePromptOptions = { type: "video" }
 ) {
   const { type, project } = options;
   const projectInfo = !project
@@ -38,7 +38,7 @@ export async function enhancePrompt(
   `.trim();
   const promptInfo = !prompt.trim() ? "" : `User prompt: ${prompt}`;
 
-  const { data } = await fal.subscribe("fal-ai/any-llm", {
+  const { data } = await fal.subscribe("google/gemini-2.0-flash-001", {
     input: {
       system_prompt: SYSTEM_PROMPT,
       prompt: `
