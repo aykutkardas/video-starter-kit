@@ -41,35 +41,12 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
     category: "image",
   },
   {
-    endpointId: "fal-ai/ideogram/v3",
-    label: "Ideogram V3",
-    description:
-      "Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use.",
-    cost: "",
-    category: "image",
-  },
-  {
     endpointId: "fal-ai/veo2",
     label: "Veo 2",
     description:
       "Veo creates videos with realistic motion and high quality output, up to 4K.",
     cost: "",
     category: "video",
-  },
-  {
-    endpointId: "fal-ai/flux-pro/v1.1-ultra",
-    label: "Flux Pro 1.1 Ultra",
-    description: "Generate a video from a text prompt",
-    cost: "",
-    category: "image",
-  },
-  {
-    endpointId: "fal-ai/recraft/v3/text-to-image",
-    label: "Recraft V3",
-    description:
-      "Recraft V3 is a text-to-image model with the ability to generate long texts, vector art, images in brand style, and much more. As of today, it is SOTA in image generation, proven by Hugging Face's industry-leading Text-to-Image Benchmark by Artificial Analysis.",
-    cost: "",
-    category: "image",
   },
 
   {
