@@ -33,9 +33,18 @@ export type ApiInfo = {
 
 export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
   {
-    endpointId: "fal-ai/flux/dev",
-    label: "Flux Dev",
-    description: "Generate a video from a text prompt",
+    endpointId: "fal-ai/imagen3",
+    label: "Imagen3",
+    description:
+      "Imagen3 is a high-quality text-to-image model that generates realistic images from text prompts.",
+    cost: "",
+    category: "image",
+  },
+  {
+    endpointId: "fal-ai/ideogram/v3",
+    label: "Ideogram V3",
+    description:
+      "Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use.",
     cost: "",
     category: "image",
   },
@@ -48,13 +57,6 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
     category: "video",
   },
   {
-    endpointId: "fal-ai/flux/schnell",
-    label: "Flux Schnell",
-    description: "Generate a video from a text prompt",
-    cost: "",
-    category: "image",
-  },
-  {
     endpointId: "fal-ai/flux-pro/v1.1-ultra",
     label: "Flux Pro 1.1 Ultra",
     description: "Generate a video from a text prompt",
@@ -62,9 +64,10 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
     category: "image",
   },
   {
-    endpointId: "fal-ai/stable-diffusion-v35-large",
-    label: "Stable Diffusion 3.5 Large",
-    description: "Image quality, typography, complex prompt understanding",
+    endpointId: "fal-ai/recraft/v3/text-to-image",
+    label: "Recraft V3",
+    description:
+      "Recraft V3 is a text-to-image model with the ability to generate long texts, vector art, images in brand style, and much more. As of today, it is SOTA in image generation, proven by Hugging Face's industry-leading Text-to-Image Benchmark by Artificial Analysis.",
     cost: "",
     category: "image",
   },
@@ -84,9 +87,10 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
     ],
   },
   {
-    endpointId: "fal-ai/stable-audio",
-    label: "Stable Audio",
-    description: "Stable Diffusion music creation with high-quality tracks",
+    endpointId: "cassetteai/music-generator",
+    label: "Cassette AI",
+    description:
+      "CassetteAI’s model generates a 30-second sample in under 2 seconds and a full 3-minute track in under 10 seconds. At 44.1 kHz stereo audio, expect a level of professional consistency with no breaks, no squeaks, and no random interruptions in your creations.",
     cost: "",
     category: "music",
   },
