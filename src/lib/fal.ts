@@ -72,50 +72,28 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
     category: "music",
   },
   {
-    endpointId: "fal-ai/playht/tts/v3",
-    label: "PlayHT TTS v3",
-    description: "Fluent and faithful speech with flow matching",
+    endpointId: "fal-ai/minimax/speech-02-hd",
+    label: "MiniMax Speech-02 HD",
+    description:
+      "Generate speech from text prompts and different voices using the MiniMax Speech-02 HD model, which leverages advanced AI techniques to create high-quality text-to-speech.",
     cost: "",
     category: "voiceover",
+    inputMap: {
+      prompt: "text",
+    },
     initialInput: {
       voice: "Dexter (English (US)/American)",
     },
   },
   {
-    endpointId: "fal-ai/playai/tts/dialog",
-    label: "PlayAI Text-to-Speech Dialog",
+    endpointId: "fal-ai/elevenlabs/tts/multilingual-v2",
+    label: "ElevenLabs TTS Multilingual v2",
     description:
-      "Generate natural-sounding multi-speaker dialogues. Perfect for expressive outputs, storytelling, games, animations, and interactive media.",
+      "Generate multilingual text-to-speech audio using ElevenLabs TTS Multilingual v2.",
     cost: "",
     category: "voiceover",
     inputMap: {
-      prompt: "input",
-    },
-    initialInput: {
-      voices: [
-        {
-          voice: "Jennifer (English (US)/American)",
-          turn_prefix: "Speaker 1: ",
-        },
-        {
-          voice: "Furio (English (IT)/Italian)",
-          turn_prefix: "Speaker 2: ",
-        },
-      ],
-    },
-  },
-  {
-    endpointId: "fal-ai/f5-tts",
-    label: "F5 TTS",
-    description: "Fluent and faithful speech with flow matching",
-    cost: "",
-    category: "voiceover",
-    initialInput: {
-      ref_audio_url:
-        "https://github.com/SWivid/F5-TTS/raw/21900ba97d5020a5a70bcc9a0575dc7dec5021cb/tests/ref_audio/test_en_1_ref_short.wav",
-      ref_text: "Some call me nature, others call me mother nature.",
-      model_type: "F5-TTS",
-      remove_silence: true,
+      prompt: "text",
     },
   },
   {
