@@ -183,6 +183,7 @@ export default function RightPanel({
     seconds_total?: number;
     voice?: string;
     input?: string;
+    duration?: number;
     reference_audio_url?: File | string | null;
     images?: {
       start_frame_num: number;
@@ -219,6 +220,10 @@ export default function RightPanel({
     input:
       endpointId === "fal-ai/playht/tts/v3" ? generateData.prompt : undefined,
   };
+
+  if (endpoint?.category === "music") {
+    input.duration = 30;
+  }
 
   if (generateData.image) {
     input.image_url = generateData.image;
