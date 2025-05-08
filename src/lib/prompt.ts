@@ -46,7 +46,7 @@ export async function enhancePrompt(
         ${projectInfo}
         ${promptInfo}
       `.trim(),
-      model: "google/gemini-2.0-flash-001",
+      model: "google/gemini-pro-1.5",
     },
   });
   return data.output.replace(/^"|"$/g, "");
