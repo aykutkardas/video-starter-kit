@@ -164,11 +164,7 @@ export default function RightPanel({
 
     const initialInput = endpoint?.initialInput || {};
 
-    if (
-      (mediaType === "video" &&
-        endpoint?.endpointId === "fal-ai/hunyuan-video") ||
-      mediaType !== "video"
-    ) {
+    if (mediaType !== "video") {
       setGenerateData({ image: null, ...initialInput });
     } else {
       setGenerateData({ ...initialInput });

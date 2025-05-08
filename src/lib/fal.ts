@@ -33,19 +33,19 @@ export type ApiInfo = {
 
 export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
   {
+    endpointId: "fal-ai/flux/dev",
+    label: "Flux Dev",
+    description: "Generate a video from a text prompt",
+    cost: "",
+    category: "image",
+  },
+  {
     endpointId: "fal-ai/veo2",
     label: "Veo 2",
     description:
       "Veo creates videos with realistic motion and high quality output, up to 4K.",
     cost: "",
     category: "video",
-  },
-  {
-    endpointId: "fal-ai/flux/dev",
-    label: "Flux Dev",
-    description: "Generate a video from a text prompt",
-    cost: "",
-    category: "image",
   },
   {
     endpointId: "fal-ai/flux/schnell",
@@ -82,24 +82,6 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
         key: "reference_audio_url",
       },
     ],
-  },
-  {
-    endpointId: "fal-ai/mmaudio-v2",
-    label: "MMAudio V2",
-    description:
-      "MMAudio generates synchronized audio given video and/or text inputs. It can be combined with video models to get videos with audio.",
-    cost: "",
-    inputAsset: ["video"],
-    category: "video",
-  },
-  {
-    endpointId: "fal-ai/sync-lipsync",
-    label: "sync.so -- lipsync 1.8.0",
-    description:
-      "Generate realistic lipsync animations from audio using advanced algorithms for high-quality synchronization.",
-    cost: "",
-    inputAsset: ["video", "audio"],
-    category: "video",
   },
   {
     endpointId: "fal-ai/stable-audio",
@@ -157,7 +139,7 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
   },
   {
     endpointId: "fal-ai/topaz/upscale/video",
-    label: "Topaz Video Upscale",
+    label: "Video Upscale",
     description:
       "Professional-grade video upscaling using Topaz technology. Enhance your videos with high-quality upscaling.",
     cost: "",
