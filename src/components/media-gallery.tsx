@@ -151,11 +151,7 @@ export function MediaGallerySheet({
     setGenerateMediaType("video");
     const image = selectedMedia.output?.images?.[0]?.url;
 
-    const endpoint = AVAILABLE_ENDPOINTS.find(
-      (endpoint) => endpoint.category === "video",
-    );
-
-    setEndpointId(endpoint?.endpointId ?? AVAILABLE_ENDPOINTS[0].endpointId);
+    setEndpointId("fal-ai/veo2");
 
     setGenerateData({
       ...(selectedMedia.input || {}),
