@@ -57,6 +57,7 @@ export function ExportDialog({ onOpenChange, ...props }: ExportDialogProps) {
       }
       const { data } = await fal.subscribe("fal-ai/ffmpeg-api/compose", {
         input: {
+          // @ts-expect-error
           tracks: videoData,
         },
         mode: "polling",
