@@ -29,6 +29,7 @@ export type ApiInfo = {
   imageForFrame?: boolean;
   category: "image" | "video" | "music" | "voiceover";
   prompt?: boolean;
+  from?: string;
 };
 
 export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
@@ -39,6 +40,30 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
       "Imagen3 is a high-quality text-to-image model that generates realistic images from text prompts.",
     cost: "",
     category: "image",
+    from: "Google",
+  },
+  {
+    endpointId: "fal-ai/ideogram/v3",
+    label: "Ideogram V3",
+    description:
+      "Generate high-quality images, posters, and logos with Ideogram V3. Features exceptional typography handling and realistic outputs optimized for commercial and creative use.",
+    cost: "",
+    category: "image",
+  },
+  {
+    endpointId: "fal-ai/flux-pro/v1.1-ultra",
+    label: "Flux Pro 1.1 Ultra",
+    description: "Generate a video from a text prompt",
+    cost: "",
+    category: "image",
+  },
+  {
+    endpointId: "fal-ai/recraft/v3/text-to-image",
+    label: "Recraft V3",
+    description:
+      "Recraft V3 is a text-to-image model with the ability to generate long texts, vector art, images in brand style, and much more. As of today, it is SOTA in image generation, proven by Hugging Face's industry-leading Text-to-Image Benchmark by Artificial Analysis.",
+    cost: "",
+    category: "image",
   },
   {
     endpointId: "fal-ai/veo2",
@@ -47,6 +72,7 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
       "Veo creates videos with realistic motion and high quality output, up to 4K.",
     cost: "",
     category: "video",
+    from: "Google",
   },
   {
     endpointId: "fal-ai/veo2/image-to-video",
@@ -56,8 +82,24 @@ export const AVAILABLE_ENDPOINTS: ApiInfo[] = [
     cost: "",
     category: "video",
     inputAsset: ["image"],
+    from: "Google",
   },
-
+  {
+    endpointId: "fal-ai/minimax/video-01-live",
+    label: "Minimax Video 01 Live",
+    description: "High quality video, realistic motion and physics",
+    cost: "",
+    category: "video",
+    inputAsset: ["image"],
+  },
+  {
+    endpointId: "fal-ai/kling-video/v1.5/pro",
+    label: "Kling 1.5 Pro",
+    description: "High quality video",
+    cost: "",
+    category: "video",
+    inputAsset: ["image"],
+  },
   {
     endpointId: "cassetteai/music-generator",
     label: "Cassette AI",

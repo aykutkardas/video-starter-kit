@@ -81,6 +81,11 @@ function ModelEndpointPicker({
           <SelectItem key={endpoint.endpointId} value={endpoint.endpointId}>
             <div className="flex flex-row gap-2 items-center">
               <span>{endpoint.label}</span>
+              {endpoint.from && (
+                <span className="text-xs text-muted-foreground">
+                  by {endpoint.from}
+                </span>
+              )}
             </div>
           </SelectItem>
         ))}
