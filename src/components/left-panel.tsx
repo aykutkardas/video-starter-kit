@@ -257,7 +257,7 @@ export default function LeftPanel() {
           </div>
           {mediaItems.length > 0 && (
             <Button
-              variant="secondary"
+              variant="primary"
               size="sm"
               onClick={() => openGenerateDialog()}
             >
